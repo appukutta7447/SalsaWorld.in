@@ -4,32 +4,33 @@
     <title>Salsas World</title>
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-    <!-- Navbar -->
-    <div class="navbar">
-        <h1>Salsas World</h1>
+<div class="navbar">
+    <h1>Salsas World</h1>
+    <a href="cart.html" class="cart-icon">
+        🛒 <span id="cart-count" class="badge">0</span>
+    </a>
+</div>
+
+<div class="products">
+
+    <div class="card">
+        <img src="sabeel.jpeg">
+        <h3>Shoes</h3>
+        <p>₹999</p>
+        <button onclick="addToCart('Shoes',999)">Add to Cart</button>
     </div>
 
-    <!-- Products Section -->
-    <div class="products">
-
-        <div class="card">
-            <img src="sabeel.jpeg" alt="Product">
-            <h3>Product 1</h3>
-            <p>₹499</p>
-            <button>Add to Cart</button>
-        </div>
-
-        <div class="card">
-            <img src="sabeel.jpeg" alt="Product">
-            <h3>Product 2</h3>
-            <p>₹799</p>
-            <button>Add to Cart</button>
-        </div>
-
+    <div class="card">
+        <img src="sabeel.jpeg">
+        <h3>Watch</h3>
+        <p>₹1499</p>
+        <button onclick="addToCart('Watch',1499)">Add to Cart</button>
     </div>
 
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>
